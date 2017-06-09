@@ -6,12 +6,13 @@ import java.util.List;
 import javax.annotation.PostConstruct;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import fr.ibformation.bataillenavalereseau.repository.JoueurRepository;
 import fr.ibformation.bataillenavalereseau.repository.PartieRepository;
 import fr.ibformation.springboot.bataillenavale.gestionnairepartie.Joueur;
 import fr.ibformation.springboot.bataillenavale.gestionnairepartie.Partie;
-
+@Component
 public class GameManager {
 	
 	@Autowired
